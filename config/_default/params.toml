@@ -1,15 +1,34 @@
 # SITE SETUP
 # Documentation: https://sourcethemes.com/academic/
 
-# Color theme.
-#   Choose from `default`, `ocean`, `forest`, `dark`, `apogee`, `1950s`, `coffee`, `cupcake`, `strawberry`.
-color_theme = "default"
+
+###############################
+## Theme
+###############################
+
+# Choose a theme. 
+# Note, I adapted the forest theme to
+# suit my color preferences.
+color_theme = "forest"
+
 # Enable users to switch between day and night mode?
-day_night = true
+day_night = false
 
 # Font style.
 #   Choose from `default`, `classic`, or `playfair`.
 font = "default"
+
+# Choose a font size.
+font_size = "M"
+
+###############################
+## Basic Info
+###############################
+
+# Website type
+#   Improve how search engines understand your site.
+
+site_type="Person"
 
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
 description = ""
@@ -19,6 +38,11 @@ sharing_image = ""
 
 # Twitter username (without @). Used when a vistor shares your site on Twitter.
 twitter = ""
+
+###############################
+## Site Features
+###############################
+
 
 # Diplay a logo in navigation bar rather than title (optional).
 #   To enable, place an image in `static/img/` and reference its filename below. To disable, set the value to "".
@@ -32,7 +56,7 @@ highlight = true
 
 # Enable global LaTeX math rendering?
 #   If false, you can enable it locally on a per page basis.
-math = false
+math = true
 
 # Privacy pack
 #   Show a cookie consent message to visitors
@@ -45,31 +69,40 @@ date_format = "Jan 2, 2006"
 #   Examples: "3:04 pm" or "15:04"
 time_format = "3:04 PM"
 
-############################
-## Contact Widget setup   ##
-############################
+###############################
+## Contact details
+###############################
 
 # Enter contact details (optional). To hide a field, clear it to "".
-email = "test@example.org"
-phone = "888 888 88 88"
-address = "Building 1 Room 1, Stanford University, California, 90210, USA"
+email = "sarahpeko-spicer2018@u.northwestern.edu"
+phone = ""
+
+# Address
+# For country_code, use the 2-letter ISO code 
+# (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
+
+address = "Northwestern University, Institute for Policy Research, 2046 Sheridan Rd, Evanston IL, 60201"
 
 # Office hours: use `<br>` to insert a line break, or set to "" to remove office hours
-office_hours = """Monday 10:00 to 13:00<br>
-                  Wednesday 09:00 to 10:00"""
+office_hours = ""
 
 # Enter an optional link for booking appointments (e.g. calendly.com).
-appointment_url = "https://calendly.com"
+appointment_url = ""
 
 # Contact links
 #   Set to `[]` to disable, or comment out unwanted lines with a hash `#`.
 contact_links = [
-  {icon = "twitter", icon_pack = "fab", name = "DM Me", link = "https://twitter.com/Twitter"},
-  {icon = "skype", icon_pack = "fab", name = "Skype Me", link = "skype:echo123?call"},
-  {icon = "keybase", icon_pack = "fab", name = "Chat on Keybase", link = "https://keybase.io/"},
-  {icon = "comments", icon_pack = "fas", name = "Discuss on Forum", link = "https://discourse.gohugo.io"},
+  {icon = "twitter", icon_pack = "fab", name = "DM Me", link = "https://twitter.com/garlandmathasi"},
+  #{icon = "skype", icon_pack = "fab", name = "Skype Me", link = "skype:echo123?call"},
+  #{icon = "keybase", icon_pack = "fab", name = "Chat on Keybase", link = "https://keybase.io/"},
+  #{icon = "comments", icon_pack = "fas", name = "Discuss on Forum", link = "https://discourse.gohugo.io"},
   # {icon = "telegram", icon_pack = "fab", name = "Telegram Me", link = "https://telegram.me/@Telegram"},
   ]
+  
+  
+###############################
+## Maps
+###############################
 
 # Display a map.
 # To show your address on a map in the contact widget, you need to enter your latitude, longitude and choose
@@ -109,8 +142,11 @@ plugins_js  = []
 # Get user avatars from Gravatar.com? (true/false)
 gravatar = false
 
+
+
 # Align the main menu to the right of the page? (true/false)
-menu_align_right = false
+main_menu = {align = "l", show_logo = true, highlight_active_link = true, show_language = false}
+
 
 # Show estimated reading time for posts? (true/false)
 reading_time = true
