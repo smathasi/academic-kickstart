@@ -144,7 +144,7 @@ plugins_js  = []
 # Get user avatars from Gravatar.com? (true/false)
 gravatar = false
 
-shape = "square"
+shape = "circle"
 
 # Align the main menu to the right of the page? (true/false)
 main_menu = {align = "l", show_logo = true, highlight_active_link = true, show_language = false}
