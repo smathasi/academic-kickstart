@@ -9,7 +9,7 @@
 # Choose a theme. 
 # Note, I adapted the forest theme to
 # suit my color preferences.
-color_theme = "forest"
+color_theme = "my_theme"
 
 # Enable users to switch between day and night mode?
 day_night = false
