@@ -261,15 +261,29 @@ a.hero-cta-alt:hover {
   position: relative;
 }
 
-.portrait {
+.avatar {
   width: 350px;
-  height:350px;
+  height: 450px;
   margin: 0 auto;
-  border-radius: 50%;
   object-fit: cover;
 }
 
+// Use smaller avatar size in About widget on small devices.
+@include media-breakpoint-down(sm) {
+  .wg-about .avatar {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+}
 
+.avatar-circle {
+  border-radius: 50%;
+}
+
+.avatar-square {
+  border-radius: 2%;
+}
 
 .portrait-title h2 {
   font-size: 1.75em;
@@ -285,8 +299,6 @@ a.hero-cta-alt:hover {
   margin: 0px 0 10px 0;
 }
 
-
-
 ul.network-icon {
   display: inline-flex;
   flex-direction: row;
@@ -294,6 +306,7 @@ ul.network-icon {
   justify-content: center;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 #profile .network-icon {
@@ -341,7 +354,6 @@ ul.ul-edu li .description p.institution {
   font-size: 0.75rem;
   color: rgba(0,0,0,0.6);
 }
-
 /*************************************************
  * Experience
  **************************************************/
